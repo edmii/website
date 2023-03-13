@@ -1,13 +1,241 @@
-.title {
-    font-size: 20px;
-    font-weight: bold;
-    color: #000;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 10px;
+body{
+    background-color: rgb(35, 35, 35);
+    box-sizing: border-box;
 }
 
-h1 {
-    color: red;
+
+p{
+    color: white;
 }
+
+.center {
+    text-align: center;
+    font-size: 25px;
+}
+
+.title {
+    color: rgb(123, 255, 96);
+    text-align: center;
+    font-family: "Tilt Prism";
+    font-size: 500%;
+    border-bottom: dotted;
+    border-top: dotted;
+}
+
+.front-page{
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    /* border: 3px solid white; */
+    justify-items: center;
+    top: 50px;
+
+}
+
+
+.halloween-img{
+    position: relative;
+    display:inline-block;
+    margin-right: 15%;
+}
+
+
+.halloween-img img{
+    opacity: 0.6;
+    transition: all ease-in-out 0.3s;
+
+}
+
+.halloween-img img:hover {
+    opacity: 1;
+    transition: all ease-in-out 0.3s;
+    box-shadow: 0px 0px 10px white;
+}
+
+.halloween-img:hover .halloween-text{
+    opacity: 0;
+    transition: all ease-in-out 0.3s;
+    pointer-events: none;
+}
+
+.halloween-text{
+    position: absolute;
+    top: 130px;
+    left: 55px;
+}
+
+.halloween-date{
+    position: absolute;
+    left: 20px;
+    top: 30px;
+}
+
+
+
+
+
+.nextparty-img{
+    position: relative;
+    /* left: 45%; */
+    /* top: 50px; */
+    display:inline-block;
+}
+
+.nextparty-img img{
+    opacity: 0.6;
+    transition: all ease-in-out 0.3s;
+
+}
+
+.nextparty-img img:hover {
+    opacity: 1;
+    transition: all ease-in-out 0.3s;
+    box-shadow: 0px 0px 10px white;
+}
+
+.nextparty-img:hover .nextparty-text{
+    opacity: 0;
+    transition: all ease-in-out 0.3s;
+    pointer-events: none;
+}
+
+.nextparty-text{
+    position: absolute;
+    top: 35%;
+    left: 40%
+}
+
+.staytuned{
+    position: absolute;
+    left: -20px;
+    top: 30px;
+    white-space: nowrap;
+}
+
+
+.button-28 {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #9e9d9d;
+    background-color: #b1b0b0;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 4%;
+    will-change: transform;
+}
+
+.button-28:disabled {
+  pointer-events: none;
+}
+
+.button-28:hover {
+  color: #fff;
+  background-color: #f5f4f400;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.container{
+    position: relative; 
+    top: 180px;
+    left: 10%;
+    height: 100%;
+    width: 80%;
+    text-align: center;
+    overflow: hidden;
+    justify-content: center;
+    /* border: 2px solid white; */
+    
+}
+
+.container img{
+    position: relative;
+    height: 15vmax;
+    width: 30%;
+    object-fit: cover;
+    margin: 5px;
+    transition: .2s linear;
+}
+
+
+/* .container img:hover{
+    transform: scale(1.03);
+} */
+
+
+
+
+.go-back {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  position: absolute;
+  top: 3%;
+  left: 3%;
+}
+
+.go-back:active {
+  box-shadow: 0px 0px 0px 0px;
+}
+
+@media (min-width: 768px) {
+  .go-back {
+    padding: 0.25em 0.75em;
+  }
+}
+
+
+@font-face
+{
+font-family: "Halloween";
+src: url("C:/Users/micci/Desktop/website/website/CFHalloween-Regular.ttf"),
+     url("C:/Users/micci/Desktop/website/website/CFHalloween-Regular.eot"); /* IE9 */
+}
+
+.title-container{
+    position: relative;
+    width: 50%;
+    top: 100px;
+    /* border: 2px solid white; */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: x-large;
+    font-family: "Halloween";
+}
+
