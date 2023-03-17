@@ -97,7 +97,7 @@ p{
 .nextparty-img img:hover {
     opacity: 1;
     transition: all ease-in-out 0.3s;
-    box-shadow: 0px 0px 10px white;
+    /* box-shadow: 0px 0px 10px white; */
 }
 
 .nextparty-img:hover .nextparty-text{
@@ -254,3 +254,6 @@ src: url("C:/Users/micci/Desktop/website/website/CFHalloween-Regular.ttf"),
   }
 
 
+.purple{
+    background-color: #1c0937;
+}
