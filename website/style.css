@@ -34,14 +34,13 @@ p{
     display: inline-block;
     text-align: center;
     /* border: 3px solid white; */
-    top: 50px;
 }
 
 
 .halloween-img{
     position: relative;
     display:inline-block;
-    margin: 50px;
+    /* margin: 50px; */
     /* margin-right: 15%; */
 }
 
@@ -82,10 +81,8 @@ p{
 
 .nextparty-img{
     position: relative;
-    /* left: 45%; */
-    /* top: 50px; */
     display:inline-block;
-    margin: 50px;
+    /* margin: 50px; */
 }
 
 .nextparty-img img{
