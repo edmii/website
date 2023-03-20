@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(35, 35, 35);
+    background-color: rgb(200, 168, 124);
     box-sizing: border-box;
 }
 
@@ -10,16 +10,22 @@ p{
 
 .center {
     text-align: center;
-    font-size: 25px;
+    font-size: 20px;
+    font-family: "serif-gothic";
+    color: rgb(2, 58, 5);
 }
 
 .title {
-    color: rgb(123, 255, 96);
+    position: relative;
+    /* border: 2px solid black; */
+    top: 20px;
+    color: rgb(71, 9, 116);
     text-align: center;
-    font-family: "Tilt Prism";
+    font-family: "serif-gothic";
+    /* font-family: "Tilt Prism"; */
     font-size: 500%;
-    border-bottom: dotted;
-    border-top: dotted;
+    border-bottom: solid;
+    border-top: solid;
 }
 
 @media screen and (max-width: 500px) {
@@ -40,16 +46,18 @@ p{
 .halloween-img{
     position: relative;
     display:inline-block;
+    color: white;
     /* margin: 50px; */
     /* margin-right: 15%; */
 }
 
 
 .halloween-img img{
-    opacity: 0.6;
+    opacity: 0.8;
     transition: all ease-in-out 0.3s;
 
 }
+
 
 .halloween-img img:hover {
     opacity: 1;
@@ -82,19 +90,21 @@ p{
 .nextparty-img{
     position: relative;
     display:inline-block;
+    color: white;
     /* margin: 50px; */
 }
 
 .nextparty-img img{
-    opacity: 0.6;
+    opacity: 0.8;
     transition: all ease-in-out 0.3s;
 
 }
 
+
 .nextparty-img img:hover {
     opacity: 1;
     transition: all ease-in-out 0.3s;
-    /* box-shadow: 0px 0px 10px white; */
+    box-shadow: 0px 0px 10px white;
 }
 
 .nextparty-img:hover .nextparty-text{
@@ -106,12 +116,17 @@ p{
 .nextparty-text{
     position: absolute;
     top: 35%;
-    left: 40%
+    left: 35%;
+}
+
+.nextparty-text .nextparty-title{
+    position: relative;
+    right: 10px;
 }
 
 .staytuned{
     position: absolute;
-    left: -20px;
+    right: 15px;
     top: 30px;
     white-space: nowrap;
 }
@@ -165,9 +180,9 @@ p{
 .container{
     position: relative; 
     top: 180px;
-    left: 10%;
+    left: 5%;
     height: 100%;
-    width: 80%;
+    width: 90%;
     text-align: center;
     overflow: hidden;
     justify-content: center;
@@ -178,18 +193,11 @@ p{
 .container img{
     position: relative;
     height: 15vmax;
-    width: 30%;
+    width: 29%;
     object-fit: cover;
     margin: 5px;
     transition: .2s linear;
 }
-
-
-/* .container img:hover{
-    transform: scale(1.03);
-} */
-
-
 
 
 .go-back {
@@ -216,21 +224,32 @@ p{
   box-shadow: 0px 0px 0px 0px;
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .go-back {
     padding: 0.25em 0.75em;
   }
+} */
+
+
+@font-face{
+    font-family: "Halloween";
+    src: url("C:/Users/micci/Desktop/website/website/fonts/CFHalloween-Regular.ttf"),
+        url("C:/Users/micci/Desktop/website/website/fonts/CFHalloween-Regular.eot"); /* IE9 */
 }
 
-
-@font-face
-{
-font-family: "Halloween";
-src: url("C:/Users/micci/Desktop/website/website/CFHalloween-Regular.ttf"),
-     url("C:/Users/micci/Desktop/website/website/CFHalloween-Regular.eot"); /* IE9 */
+@font-face{
+    font-family: "Candice";
+    src: url("C:/Users/micci/Desktop/website/website/fonts/Candice.otf"),
+         url("C:/Users/micci/Desktop/website/website/fonts/Candice.eot"); 
 }
 
-.title-container{
+@font-face {
+    font-family: "serif-gothic";
+    src: url("C:/Users/micci/Desktop/website/website/fonts/serif-gothic.otf"),
+         url("C:/Users/micci/Desktop/website/website/fonts/serif-gothic.eot");
+}
+
+.title-container-halloween{
     position: relative;
     width: 50%;
     top: 100px;
@@ -242,15 +261,65 @@ src: url("C:/Users/micci/Desktop/website/website/CFHalloween-Regular.ttf"),
     font-family: "Halloween";
 }
 
-#myVideo {
+.title-container-70s p{
+    position: relative;
+    color: rgb(254,217,51);
+    width: 50%;
+    top: 80px;
+    /* border: 2px solid white; */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size:xx-large;
+    font-family: "Candice";
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#background-video {
     position: absolute;
-    right: 0;
-    bottom: 50px;
-    min-width: 100%;
-    min-height: 100%;
+    /* right: 0; */
+    bottom: 30%;
+    right:1%;
+    width: 100%;
+    height: 100%;
+    /* border: 3px solid white; */
   }
 
 
 .purple{
     background-color: #1c0937;
+}
+
+.notte-70{
+    background-image: url("C:/Users/micci/Desktop/website/website/images/background-70.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.address{
+    position: absolute;
+    bottom: 55%;
+    left: 65%;
+    /* font-family: "Candice"; */
+    font-size: large;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.maps{
+    position: relative;
+    width: 50%;
+    height: 50%;
+    margin-left: 40px;
+    border: 2px solid white;
+}
+
+.centered{
+    position: relative;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    /* font-family: "Candice"; */
+    font-size: x-large;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
