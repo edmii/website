@@ -213,20 +213,20 @@ p{
 
 @font-face{
     font-family: "Halloween";
-    src: url("C:/Users/micci/Desktop/website/website/fonts/CFHalloween-Regular.ttf"),
-        url("C:/Users/micci/Desktop/website/website/fonts/CFHalloween-Regular.eot"); /* IE9 */
+    src: url("/fonts/CFHalloween-Regular.ttf"),
+        url("/fonts/CFHalloween-Regular.eot"); /* IE9 */
 }
 
 @font-face{
     font-family: "Candice";
-    src: url("C:/Users/micci/Desktop/website/website/fonts/Candice.otf"),
-         url("C:/Users/micci/Desktop/website/website/fonts/Candice.eot"); 
+    src: url("/fonts/Candice.otf"),
+         url("/fonts/Candice.eot"); 
 }
 
 @font-face {
     font-family: "serif-gothic";
-    src: url("C:/Users/micci/Desktop/website/website/fonts/serif-gothic.otf"),
-         url("C:/Users/micci/Desktop/website/website/fonts/serif-gothic.eot");
+    src: url("/fonts/serif-gothic.otf"),
+         url("/fonts/serif-gothic.eot");
 }
 
 .title-container-halloween{
