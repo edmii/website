@@ -7,6 +7,82 @@ p{
     color: white;
 }
 
+@media screen and (min-width: 465px){
+    .festini-precedenti{
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+    }
+    
+    .festini-precedenti div{
+        margin: 20px;
+    }
+}
+
+
+.navbar{
+    display: flex;
+    position: absolute;
+    justify-content: left;
+    align-items: center;
+    top:5px;
+    height: 60px;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 500px ) {
+    .navbar{
+        display: flex;
+        position: absolute;
+        top:5px;
+        height: 40px;
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (min-width: 500px ){
+    .button-92 {
+        --c: #fff;
+        /* text color */
+        background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
+        rgb(71, 9, 116);
+        /* background color */
+        color: #0000;
+        border: none;
+        transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+        text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
+          calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
+        outline-offset: .1em;
+        transition: 0.3s;
+      }
+      
+      .button-92:hover,
+      .button-92:focus-visible {
+        --_p: 0%;
+        --_i: 1;
+      }
+      
+      .button-92:active {
+        text-shadow: none;
+        color: var(--c);
+        box-shadow: inset 0 0 9e9q #0005;
+        transition: 0s;
+      }
+      
+      .button-92 {
+        font-weight: bold;
+        font-size: 2rem;
+        margin: 0;
+        cursor: pointer;
+        padding: .1em .3em;
+      }
+
+}
+
+
 .center {
     text-align: center;
     font-size: 20px;
@@ -39,88 +115,41 @@ p{
 }
 
 
-.halloween-img{
+.party-img{
     position: relative;
     display:inline-block;
     color: white;
 }
 
 
-.halloween-img img{
+.party-img img{
     opacity: 0.8;
     transition: all ease-in-out 0.3s;
 
 }
 
 
-.halloween-img img:hover {
+.party-img img:hover {
     opacity: 1;
     transition: all ease-in-out 0.3s;
     box-shadow: 0px 0px 10px white;
 }
 
-.halloween-img:hover .halloween-text{
+.party-img:hover .party-text{
     opacity: 0;
     transition: all ease-in-out 0.3s;
     pointer-events: none;
 }
 
-.halloween-text{
+.party-text{
     position: absolute;
     top: 130px;
-    left: 55px;
+    left: 50px;
 }
 
-.halloween-date{
-    position: absolute;
-    left: 20px;
-    top: 30px;
+#halloween-text{
+    left: 40px;
 }
-
-
-.nextparty-img{
-    position: relative;
-    display:inline-block;
-    color: white;
-}
-
-.nextparty-img img{
-    opacity: 0.8;
-    transition: all ease-in-out 0.3s;
-
-}
-
-
-.nextparty-img img:hover {
-    opacity: 1;
-    transition: all ease-in-out 0.3s;
-    box-shadow: 0px 0px 10px white;
-}
-
-.nextparty-img:hover .nextparty-text{
-    opacity: 0;
-    transition: all ease-in-out 0.3s;
-    pointer-events: none;
-}
-
-.nextparty-text{
-    position: absolute;
-    top: 35%;
-    left: 35%;
-}
-
-.nextparty-text .nextparty-title{
-    position: relative;
-    right: 10px;
-}
-
-.staytuned{
-    position: absolute;
-    right: 15px;
-    top: 30px;
-    white-space: nowrap;
-}
-
 
 .button-28 {
     appearance: none;
@@ -173,7 +202,6 @@ p{
     height: 100%;
     width: 90%;
     text-align: center;
-    overflow: hidden;
     justify-content: center;   
 }
 
@@ -183,7 +211,6 @@ p{
     width: 29%;
     object-fit: cover;
     margin: 5px;
-    transition: .2s linear;
 }
 
 
@@ -248,7 +275,7 @@ p{
     height: 100%;
   }
 
-  .purple{
+.purple{
     background-color: #1c0937;
 }
 
@@ -264,18 +291,13 @@ p{
 }
 
 .notte-70{
-    background-color: rgb(217, 32, 22);
-    overflow: hidden;
+    background: url("/images/img_70-80/vintage.jpg") repeat ;
+    width: 100%;
+    height: auto;
+    background-size: 100% auto;
+
 }
 
-.infos{
-    position: relative;
-    top: 50px;
-    font-family: "Candice";
-    font-size: large;
-    color: rgb(254,217,51);
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
 
 .centered{
     position: relative;
@@ -284,11 +306,6 @@ p{
     font-size: large;
 }
 
-.main{
-    font-size: larger;
-    color: rgb(254,217,51);
-    position: relative;
-}
 
 
 #dance{
@@ -307,54 +324,34 @@ p{
     }
 }
 
-.contatti{
+.vincitore{
     position: relative;
-    width: 100%;
-    text-align: right;
-    font-size: larger;
-    color: rgb(254,217,51);
-}
-
-.insta{
-    position: relative;
-    width: 100%;
-    text-align: right;
-    font-size: larger;
-    text-shadow: none;
-}
-
-.directions{
-    position: relative;
-    width: 80%;
-    height: 100px;
     justify-content: center;
-}
-
-.address{
-    position: absolute;
-    left:100px;
-    justify-content: center;
-    font-size:medium;
-}
-
-.indicazioni{
-    position: absolute;
-    width: 80px;
+    text-align: center;
+    width: 90%; 
+    left:5%;
     height: auto;
-    top: 10px;
+
 }
 
-.ig{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    width: 100%;
-    align-items: end;
+.vincitore img{
+    position: inherit;
+    top:100px;
+    width: 326px; 
 }
 
-.ig img{
-    margin-bottom: 5px;
-    width: 150px;
-    height: auto;
-    vertical-align: auto;
+@media screen and (min-width: 1300px){
+    .vincitore img{
+        position: inherit;
+        top:100px;
+        width: 29%; 
+    }
+}
+
+@media screen and (max-width: 375px){
+    .vincitore img{
+        position: inherit;
+        top:100px;
+        width: 70%; 
+    }
 }
