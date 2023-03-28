@@ -147,8 +147,16 @@ p{
     left: 50px;
 }
 
-#halloween-text{
+.previous-party{
+    position: absolute;
+    top: 130px;
     left: 40px;
+}
+
+@media screen and (max-width: 465px) {
+    .previous-party{
+        left:60px;
+    }
 }
 
 .button-28 {
