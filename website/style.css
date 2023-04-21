@@ -380,7 +380,7 @@ a{
 }
 
 .neon-body{
-    background: url("C:/Users/micci/Desktop/website-local/website/images/neon/neon-bkg.jpg") repeat ;
+    background: url("/images/neon/neon-bkg.jpg") repeat ;
     /* font-family: "neon"; */
 }
 
