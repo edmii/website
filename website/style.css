@@ -147,7 +147,8 @@ a{
 .party-text{
     position: absolute;
     top: 130px;
-    left: 50px;
+    /* left: 50px;  for coming soon text */
+    left: 70px; /*for neon party */
 }
 
 .previous-party{
