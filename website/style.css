@@ -6,6 +6,9 @@ body{
 p{
     color: white;
 }
+a{
+    color: inherit;
+}
 
 @media screen and (min-width: 465px){
     .festini-precedenti{
@@ -249,7 +252,7 @@ p{
 @font-face{
     font-family: "Halloween";
     src: url("/fonts/CFHalloween-Regular.ttf"),
-        url("/fonts/CFHalloween-Regular.eot"); /* IE9 */
+        url("/fonts/CFHalloween-Regular.eot"); 
 }
 
 @font-face{
@@ -262,6 +265,18 @@ p{
     font-family: "serif-gothic";
     src: url("/fonts/serif-gothic.otf"),
          url("/fonts/serif-gothic.eot");
+}
+
+@font-face {
+    font-family: "neon";
+    src: url("/fonts/NEON.ttf"),
+         url("/fonts/NEON.eot");
+}
+
+@font-face {
+    font-family: "neon_2";
+    src: url("/fonts/Neon Future.ttf"),
+         url("/fonts/Neon Future.eot");
 }
 
 .title-container-halloween{
@@ -362,4 +377,162 @@ p{
         top:100px;
         width: 70%; 
     }
+}
+
+.neon-body{
+    background: url("C:/Users/micci/Desktop/website-local/website/images/neon/neon-bkg.jpg") repeat ;
+    /* font-family: "neon"; */
+}
+
+.neon-title{
+    position: relative;
+    color: #db3eb1;
+    width: 100%;
+    top: 100px;
+    text-align: center;
+    font-size:xx-large;
+    /* text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+    filter: drop-shadow(0 0 15px #db3eb1) drop-shadow(0 0 50px #db3eb1) contrast(2) brightness(2);
+    font-family: "neon";
+}
+
+.neon-button {
+    color: #db3eb1;
+    border: 6px solid #db3eb1;
+    border-radius:15px;
+    padding: 15px 25px;
+    font-size: 30px;
+    font-family: tahoma;
+    letter-spacing:5px;
+    cursor: pointer;
+    font-weight: bold;
+    filter: drop-shadow(0 0 15px #db3eb1) drop-shadow(0 0 50px #db3eb1) contrast(2) brightness(2);
+    transition: .5s;
+    background-color: transparent;
+    position: absolute;
+    top: 3%;
+    left: 3%;
+  }
+  
+  .neon-button:hover {
+    color: #db3eb1;
+    background-color: #07fdff;
+    filter: drop-shadow(0 0 20px #db3eb1) contrast(2) brightness(2);
+  }
+
+  .neon-navbar{
+    position: relative;
+    top:150px;
+    display: flex;
+    height:30vh;
+    width: 106%;
+    text-align: center;
+    justify-content: center;
+    right: 2%;
+    border-top: solid #07fdff;
+    border-bottom: solid #07fdff;
+    background-color: black;
+    filter: drop-shadow(0 0 15px #db3eb1) drop-shadow(0 0 50px #db3eb1) contrast(2) brightness(2);
+  }
+
+  .dove{
+    position: relative;
+    object-fit: cover;
+    margin: 5px;
+    width: 30%;
+    border-left: solid #07fdff;
+    border-right: solid #07fdff;
+  }
+
+  .dress-code{
+    position: relative;
+    object-fit: cover;
+    margin: 5px;
+    width: 30%;
+  }
+
+  .music-type{
+    position: relative;
+    object-fit: cover;
+    margin: 5px;
+    width: 30%;
+  }
+
+.neon-text{
+    position: inherit;
+    font-size: 15px;
+    top:40px;
+    text-decoration: none;
+    background-color: none;
+    color: #07fdff;
+    font-family: "neon_2";
+    filter: drop-shadow(0 0 15px #db3eb1) drop-shadow(0 0 50px #db3eb1) contrast(2) brightness(2);
+}
+
+
+.infos{
+    position: absolute;
+    top:570px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: none;
+    color: #07fdff;
+    font-family: "neon_2";
+    filter: drop-shadow(0 0 15px #db3eb1) drop-shadow(0 0 50px #db3eb1) contrast(2) brightness(2);
+}
+
+.under-navbar{
+    position: absolute;
+    top:620px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: none;
+    color: #07fdff;
+    font-family: "neon_2";
+    filter: drop-shadow(0 0 15px #db3eb1) drop-shadow(0 0 50px #db3eb1) contrast(2) brightness(2);
+}
+
+@media screen and (max-width: 420px){
+    .neon-text{
+    font-size: 12px; 
+    }
+    .neon-button {
+        border: 3px solid #db3eb1;
+        border-radius:8px;
+        padding: 8px 13px;
+        font-size: 18px;
+        letter-spacing:5px;
+        top: 3%;
+        left: 3%;
+      }
+      .infos{
+        top:215px;
+    }
+    .under-navbar{
+        position: absolute;
+        top:570px;
+    }
+}
+
+.insta{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 300px;
+    height: 100px;
+    width: 100%;
+}
+
+.neon-insta{
+    position: relative;
+    justify-self: center;
+    height: 100px;
+    width: auto;
+    margin: 10px;
 }
